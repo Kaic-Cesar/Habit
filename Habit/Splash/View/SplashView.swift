@@ -9,19 +9,24 @@ import SwiftUI
 
 struct SplashView: View {
     
-    @State var uiState: SplashUIState = .loading
+    @ObservedObject var viewModel: SplashViewModel
     
     var body: some View {
-        switch uiState {
-        case .loading:
-            loadingView()
-        case .goToSignScreen:
-            Text("Tela de Login")
-        case .goToHomeScreen:
-            Text("Tela Principal")
-        case .error(let msg):
-            loadingView(error: msg)
+        Group {
+            switch viewModel.uiState {
+            case .loading:
+                loadingView()
+            case .goToSignScreen:
+                Text("Tela de Login")
+            case .goToHomeScreen:
+                Text("Tela Principal")
+            case .error(let msg):
+                loadingView(error: msg)
+            }
         }
+        .onAppear(perform: {
+            viewModel.onAppear()
+        })
     }
 }
 
@@ -51,5 +56,5 @@ extension SplashView {
 }
 
 #Preview {
-    SplashView()
+    SplashView(viewModel: SplashViewModel())
 }
