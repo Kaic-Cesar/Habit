@@ -111,7 +111,7 @@ extension SignInView {
             
             ZStack {
                 NavigationLink {
-                    Text("Tela de Cadastro")
+                    viewModel.singUpView()
                 } label: {
                     Text("Register")
                 }

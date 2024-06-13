@@ -19,6 +19,8 @@
 		965083022C1B6E3200025945 /* SignInViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965083012C1B6E3200025945 /* SignInViewRouter.swift */; };
 		965083082C1B6E6900025945 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965083072C1B6E6900025945 /* HomeView.swift */; };
 		9650830C2C1B6EB100025945 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9650830B2C1B6EB100025945 /* HomeViewModel.swift */; };
+		965083122C1B77B500025945 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965083112C1B77B500025945 /* SignUpView.swift */; };
+		965083142C1B77CA00025945 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965083132C1B77CA00025945 /* SignUpViewModel.swift */; };
 		965A44FB2C18EF6E0027527B /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A44FA2C18EF6E0027527B /* SplashViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,8 @@
 		965083012C1B6E3200025945 /* SignInViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewRouter.swift; sourceTree = "<group>"; };
 		965083072C1B6E6900025945 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		9650830B2C1B6EB100025945 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		965083112C1B77B500025945 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		965083132C1B77CA00025945 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		965A44FA2C18EF6E0027527B /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				965083032C1B6E4900025945 /* Home */,
+				9650830D2C1B778500025945 /* SignUp */,
 				965082F82C1B5FB300025945 /* SignIn */,
 				963768E82C18CEDE0069B78D /* Splash */,
 				963768DA2C18CB4F0069B78D /* HabitApp.swift */,
@@ -190,6 +195,39 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		9650830D2C1B778500025945 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				965083102C1B77AB00025945 /* View */,
+				9650830F2C1B77A300025945 /* ViewModel */,
+				9650830E2C1B779F00025945 /* Model */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		9650830E2C1B779F00025945 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9650830F2C1B77A300025945 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				965083132C1B77CA00025945 /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		965083102C1B77AB00025945 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				965083112C1B77B500025945 /* SignUpView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -261,9 +299,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				963768EF2C18CF860069B78D /* SplashUIState.swift in Sources */,
+				965083142C1B77CA00025945 /* SignUpViewModel.swift in Sources */,
 				9650830C2C1B6EB100025945 /* HomeViewModel.swift in Sources */,
 				963768DB2C18CB4F0069B78D /* HabitApp.swift in Sources */,
 				965082FC2C1B600600025945 /* SignInViewModel.swift in Sources */,
+				965083122C1B77B500025945 /* SignUpView.swift in Sources */,
 				965083082C1B6E6900025945 /* HomeView.swift in Sources */,
 				965083022C1B6E3200025945 /* SignInViewRouter.swift in Sources */,
 				963768ED2C18CEFC0069B78D /* SplashView.swift in Sources */,
