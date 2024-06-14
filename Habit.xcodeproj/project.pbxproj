@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9632E6692C1CABF000EF2E1C /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9632E6682C1CABF000EF2E1C /* Gender.swift */; };
 		963768DB2C18CB4F0069B78D /* HabitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963768DA2C18CB4F0069B78D /* HabitApp.swift */; };
 		963768DF2C18CB530069B78D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 963768DE2C18CB530069B78D /* Assets.xcassets */; };
 		963768E22C18CB540069B78D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 963768E12C18CB540069B78D /* Preview Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9632E6682C1CABF000EF2E1C /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
 		963768D72C18CB4F0069B78D /* Habit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Habit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		963768DA2C18CB4F0069B78D /* HabitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitApp.swift; sourceTree = "<group>"; };
 		963768DE2C18CB530069B78D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,6 +56,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9632E6652C1CABC900EF2E1C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9632E6672C1CABDC00EF2E1C /* Model */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9632E6672C1CABDC00EF2E1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9632E6682C1CABF000EF2E1C /* Gender.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		963768CE2C18CB4F0069B78D = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +91,7 @@
 		963768D92C18CB4F0069B78D /* Habit */ = {
 			isa = PBXGroup;
 			children = (
+				9632E6652C1CABC900EF2E1C /* Common */,
 				965083032C1B6E4900025945 /* Home */,
 				9650830D2C1B778500025945 /* SignUp */,
 				965082F82C1B5FB300025945 /* SignIn */,
@@ -304,6 +323,7 @@
 				963768DB2C18CB4F0069B78D /* HabitApp.swift in Sources */,
 				965082FC2C1B600600025945 /* SignInViewModel.swift in Sources */,
 				965083122C1B77B500025945 /* SignUpView.swift in Sources */,
+				9632E6692C1CABF000EF2E1C /* Gender.swift in Sources */,
 				965083082C1B6E6900025945 /* HomeView.swift in Sources */,
 				965083022C1B6E3200025945 /* SignInViewRouter.swift in Sources */,
 				963768ED2C18CEFC0069B78D /* SplashView.swift in Sources */,
