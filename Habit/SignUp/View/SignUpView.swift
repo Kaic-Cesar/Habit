@@ -42,8 +42,20 @@ struct SignUpView: View {
                     Spacer()
                 }
                 .padding(.horizontal, 12)
+                
             }
             .padding(20)
+            
+            if case SignUpUIState.error(let value) = viewModel.uiState {
+                Text("")
+                    .alert(isPresented: .constant(true)) {
+                        Alert(title: Text("Habit"),
+                              message: Text(value),
+                              dismissButton: .default(Text("OK")) {
+                            // acao
+                        })
+                    }
+            }
         }
     }
 }
@@ -99,14 +111,13 @@ extension SignUpView {
             }
         }
         .pickerStyle(SegmentedPickerStyle())
-        
     }
 }
 
 extension SignUpView {
     var saveButton: some View {
         Button("Realize o cadastro") {
-            // ação
+            viewModel.signUp()
         }
     }
 }

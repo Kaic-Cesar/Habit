@@ -11,6 +11,9 @@ struct SignInView: View {
     
     @ObservedObject var viewModel: SignInViewModel
     
+    
+    
+    
     @State var email = ""
     @State var password = ""
     
@@ -46,7 +49,7 @@ struct SignInView: View {
                                 enterButton
                                 registerLink
                                 
-                                Text("Copyright @Kaic.Dev")
+                                Text("Copyright @YYYY")
                                     .foregroundStyle(.gray)
                                     .font(Font.system(size: 16))
                                     .padding(.top, 36)
@@ -109,12 +112,10 @@ extension SignInView {
                 .foregroundStyle(.gray)
                 .padding(.top, 48)
             
-            ZStack {
-                NavigationLink {
-                    viewModel.singUpView()
-                } label: {
-                    Text("Register")
-                }
+            NavigationLink {
+                viewModel.singUpView()
+            } label: {
+                Text("Registre-se")
             }
         }
     }
