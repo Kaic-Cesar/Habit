@@ -11,10 +11,6 @@ struct SignInView: View {
     
     @ObservedObject var viewModel: SignInViewModel
     
-    @State var email = ""
-    @State var password = ""
-    
-    
     var body: some View {
         ZStack {
         
@@ -77,21 +73,21 @@ struct SignInView: View {
 
 extension SignInView {
     var emailField: some View {
-        EditTextView(text: $email,
+        EditTextView(text: $viewModel.email,
                      placeholder: "Your email",
                      keyboard: .emailAddress,
-                     failure: !email.isEmail(),
+                     failure: !viewModel.email.isEmail(),
                      error: "Invalid Email")
     }
 }
 
 extension SignInView {
     var passwordField: some View {
-        EditTextView(text: $password,
+        EditTextView(text: $viewModel.password,
                      placeholder: "Your password",
                      keyboard: .emailAddress,
                      isSecure: true,
-                     failure: password.count < 8,
+                     failure: viewModel.password.count < 8,
                      error: "minimum 8 characters")
             
     }
@@ -100,11 +96,11 @@ extension SignInView {
 extension SignInView {
     var enterButton: some View {
         LoadingButtonView(action: {
-            viewModel.login(email: email, password: password)
-        }, 
+            viewModel.login()
+        },
         nameButton: "Entrar",
         showProgress: self.viewModel.uiState == SignInUIState.loading,
-        disabled: !email.isEmail() || password.count < 8)
+                          disabled: !viewModel.email.isEmail() || viewModel.password.count < 8)
         
     }
 }

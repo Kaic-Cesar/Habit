@@ -9,7 +9,16 @@ import SwiftUI
 import Combine
 
 class SignUpViewModel: ObservableObject {
+    
     @Published var uiState: SignUpUIState = .none
+    
+    @Published var fullName = ""
+    @Published var email = ""
+    @Published var password = ""
+    @Published var phone = ""
+    @Published var document = ""
+    @Published var birthday = ""
+    @Published var gender = Gender.male
     
     var publisher: PassthroughSubject<Bool, Never>!
 

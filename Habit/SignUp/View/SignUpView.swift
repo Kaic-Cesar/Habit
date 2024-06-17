@@ -11,13 +11,7 @@ struct SignUpView: View {
     
     @ObservedObject var viewModel: SignUpViewModel
     
-    @State var fullName = ""
-    @State var email = ""
-    @State var password = ""
-    @State var phone = ""
-    @State var document = ""
-    @State var birthday = ""
-    @State var gender = Gender.male
+
     
     
     var body: some View {
@@ -26,7 +20,7 @@ struct SignUpView: View {
                 VStack(alignment: .center) {
                     VStack(alignment: .leading, spacing: 8) {
                         Text("Cadastro")
-                            .foregroundStyle(.orange)
+                            .foregroundStyle(Color("textColor"))
                             .font(Font.system(.title).bold())
                             .padding(.bottom, 8)
                         
@@ -62,63 +56,96 @@ struct SignUpView: View {
 
 extension SignUpView {
     var fullNameField: some View {
-        TextField("Nome Completo", text: $fullName)
-            .border(.black)
+        EditTextView(text: $viewModel.fullName,
+                     placeholder: "Nome completo",
+                     keyboard: .alphabet,
+                     isSecure: false,
+                     failure: viewModel.fullName.count < 3,
+                     error: "Nome inválido")
     }
 }
 
 extension SignUpView {
     var emailField: some View {
-        TextField("Email", text: $email)
-            .border(.black)
+        EditTextView(text: $viewModel.email,
+                     placeholder: "Digite seu email",
+                     keyboard: .emailAddress,
+                     isSecure: false,
+                     failure: !viewModel.email.isEmail(),
+                     error: "Email inválido")
     }
 }
 
 extension SignUpView {
     var passwordField: some View {
-        TextField("Senha", text: $password)
-            .border(.black)
+        EditTextView(text: $viewModel.password,
+                     placeholder: "Digite sua senha",
+                     keyboard: .emailAddress,
+                     isSecure: true,
+                     failure: viewModel.password.count < 8,
+                     error: "Senha inválida")
     }
 }
 
 extension SignUpView {
     var phoneField: some View {
-        TextField("Telefone", text: $phone)
-            .border(.black)
+        EditTextView(text: $viewModel.phone,
+                     placeholder: "Digite seu telefone",
+                     keyboard: .numberPad,
+                     isSecure: false,
+                     failure: viewModel.phone.count != 11,
+                     error: "DDD + 9 + Numbero")
     }
 }
 
 extension SignUpView {
     var documentField: some View {
-        TextField("CPF", text: $document)
-            .border(.black)
+        EditTextView(text: $viewModel.document,
+                     placeholder: "Digite seu CPF",
+                     keyboard: .numberPad,
+                     isSecure: false,
+                     failure: viewModel.document.count != 11,
+                     error: "CPF inválido")
     }
 }
 
 extension SignUpView {
     var birthdayField: some View {
-        TextField("Data de Nascimento", text: $birthday)
-            .border(.black)
+        EditTextView(text: $viewModel.birthday,
+                     placeholder: "Insira sua data de nascimento",
+                     keyboard: .alphabet,
+                     isSecure: false,
+                     failure: viewModel.birthday.count != 10,
+                     error: "Data inválida")
     }
 }
 
 extension SignUpView {
     var genderField: some View {
-        Picker("Gender", selection: $gender) {
+        Picker("Gender", selection: $viewModel.gender) {
             ForEach(Gender.allCases, id: \.self) { value in
                 Text(value.rawValue)
                     .tag(value)
             }
         }
+        .padding(.vertical, 26)
         .pickerStyle(SegmentedPickerStyle())
     }
 }
 
 extension SignUpView {
     var saveButton: some View {
-        Button("Realize o cadastro") {
-            viewModel.signUp()
-        }
+        LoadingButtonView(action: {
+            print("ola")
+        },
+                        nameButton: "Registre-se",
+                          showProgress: self.viewModel.uiState == SignUpUIState.loading,
+                          disabled: viewModel.fullName.count < 3 ||
+                          !viewModel.email.isEmail() ||
+                          viewModel.password.count < 8 ||
+                          viewModel.phone.count != 11 ||
+                          viewModel.document.count != 11 ||
+                          viewModel.birthday.count != 10)
     }
 }
 
