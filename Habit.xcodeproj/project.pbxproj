@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96013E022C235ADA00572DD5 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96013E012C235ADA00572DD5 /* WebService.swift */; };
 		960DF4882C20A1D800745F71 /* EditTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960DF4872C20A1D800745F71 /* EditTextView.swift */; };
 		960DF48B2C20A6D600745F71 /* CustomTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960DF48A2C20A6D600745F71 /* CustomTextFieldStyle.swift */; };
 		960DF48E2C20A9CF00745F71 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960DF48D2C20A9CF00745F71 /* String+Extension.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		96013E012C235ADA00572DD5 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		960DF4872C20A1D800745F71 /* EditTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTextView.swift; sourceTree = "<group>"; };
 		960DF48A2C20A6D600745F71 /* CustomTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldStyle.swift; sourceTree = "<group>"; };
 		960DF48D2C20A9CF00745F71 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
@@ -68,6 +70,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		96013E002C235AC400572DD5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				96013E012C235ADA00572DD5 /* WebService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		960DF4862C20A1B200745F71 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +107,7 @@
 		9632E6652C1CABC900EF2E1C /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				96013E002C235AC400572DD5 /* Network */,
 				960DF48C2C20A9AE00745F71 /* Lang */,
 				960DF4862C20A1B200745F71 /* View */,
 				9632E6672C1CABDC00EF2E1C /* Model */,
@@ -368,6 +379,7 @@
 				9632E66B2C1CAEBA00EF2E1C /* SignUpUIState.swift in Sources */,
 				963768DB2C18CB4F0069B78D /* HabitApp.swift in Sources */,
 				965082FC2C1B600600025945 /* SignInViewModel.swift in Sources */,
+				96013E022C235ADA00572DD5 /* WebService.swift in Sources */,
 				965083122C1B77B500025945 /* SignUpView.swift in Sources */,
 				9632E6692C1CABF000EF2E1C /* Gender.swift in Sources */,
 				965083082C1B6E6900025945 /* HomeView.swift in Sources */,

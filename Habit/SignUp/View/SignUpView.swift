@@ -136,7 +136,7 @@ extension SignUpView {
 extension SignUpView {
     var saveButton: some View {
         LoadingButtonView(action: {
-            print("ola")
+            viewModel.signUp()
         },
                         nameButton: "Registre-se",
                           showProgress: self.viewModel.uiState == SignUpUIState.loading,
