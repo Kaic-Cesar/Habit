@@ -3,4 +3,114 @@
    uuid = "1E3B334C-F763-438C-81A0-D6C7CB62EA9E"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8CFDF930-F73C-46D0-805A-D8FCAC85FE23"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Habit/Common/Network/WebService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "postUser(request:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8CFDF930-F73C-46D0-805A-D8FCAC85FE23 - b1aa04633c96fb91"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Habit.WebService.Result) -&gt; () in static Habit.WebService.postUser(request: Habit.SignUpRequest) -&gt; ()"
+                  moduleName = "Habit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kaiccesar/Documents/Estudos/iOS%20Developer/Habit/Habit/Common/Network/WebService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78">
+               </Location>
+               <Location
+                  uuid = "8CFDF930-F73C-46D0-805A-D8FCAC85FE23 - b1aa04633c96fb91"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Habit.WebService.Result) -&gt; () in static Habit.WebService.postUser(request: Habit.SignUpRequest) -&gt; ()"
+                  moduleName = "Habit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kaiccesar/Documents/Estudos/iOS%20Developer/Habit/Habit/Common/Network/WebService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E0CB0E15-DFDE-46F3-989E-20C4D6F14A46"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Habit/Common/Network/WebService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "call(path:body:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E0CB0E15-DFDE-46F3-989E-20C4D6F14A46 - 137844338debf48f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static Habit.WebService.call&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Encodable&gt;(path: Habit.WebService.Endpoint, body: &#x3c4;_0_0, completion: (Habit.WebService.Result) -&gt; ()) -&gt; ()"
+                  moduleName = "Habit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kaiccesar/Documents/Estudos/iOS%20Developer/Habit/Habit/Common/Network/WebService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49">
+               </Location>
+               <Location
+                  uuid = "E0CB0E15-DFDE-46F3-989E-20C4D6F14A46 - 137844338debf48f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static Habit.WebService.call&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Encodable&gt;(path: Habit.WebService.Endpoint, body: &#x3c4;_0_0, completion: (Habit.WebService.Result) -&gt; ()) -&gt; ()"
+                  moduleName = "Habit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kaiccesar/Documents/Estudos/iOS%20Developer/Habit/Habit/Common/Network/WebService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E6B342BB-B967-4132-9BB1-954BCF0CF923"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Habit/Common/Network/WebService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "call(path:body:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
