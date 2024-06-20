@@ -30,6 +30,7 @@
 		965083122C1B77B500025945 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965083112C1B77B500025945 /* SignUpView.swift */; };
 		965083142C1B77CA00025945 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965083132C1B77CA00025945 /* SignUpViewModel.swift */; };
 		965A44FB2C18EF6E0027527B /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A44FA2C18EF6E0027527B /* SplashViewModel.swift */; };
+		96A088182C24918800D47772 /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A088172C24918800D47772 /* SignUpRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		965083112C1B77B500025945 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		965083132C1B77CA00025945 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		965A44FA2C18EF6E0027527B /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		96A088172C24918800D47772 /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				9632E66A2C1CAEBA00EF2E1C /* SignUpUIState.swift */,
+				96A088172C24918800D47772 /* SignUpRequest.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				965083002C1B6A6E00025945 /* SignInUIState.swift in Sources */,
 				960DF48B2C20A6D600745F71 /* CustomTextFieldStyle.swift in Sources */,
 				960DF4882C20A1D800745F71 /* EditTextView.swift in Sources */,
+				96A088182C24918800D47772 /* SignUpRequest.swift in Sources */,
 				965082FE2C1B608800025945 /* SplashViewRouter.swift in Sources */,
 				965082FA2C1B5FD200025945 /* SignInView.swift in Sources */,
 			);
